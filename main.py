@@ -164,11 +164,10 @@ class OrdersScreen(Screen):
         if not app.user:
             return
         all_orders = api.get_orders()
-        # mine = [o for o in all_orders if o.get('user_id') == app.user['id']] \
-        #     if isinstance(all_orders, list) else []
+        mine = [o for o in all_orders if o.get('user_id') == app.user['id']] \
+            if isinstance(all_orders, list) else []
         self.rv_data.clear()
-        # self.rv_data.extend({'item': o} for o in mine)
-        self.rv_data.extend({'item': o} for o in all_orders)
+        self.rv_data.extend({'item': o} for o in mine)
 
     def show_details(self, o):
         if not o:
