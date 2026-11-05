@@ -169,7 +169,7 @@ class OrdersScreen(Screen):
         self.rv_data.clear()
         # self.rv_data.extend({'item': o} for o in mine)
         self.rv_data.extend({'item': o} for o in all_orders)
-S
+
     def show_details(self, o):
         if not o:
             return
