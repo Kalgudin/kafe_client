@@ -3,8 +3,8 @@ import requests
 
 # Для эмулятора Android: 10.0.2.2 — это хост-машина.
 # Для реального телефона укажите IP вашего ПК в локальной сети, например 192.168.1.100.
-BASE_URL = "http://127.0.0.1:8000"
-# BASE_URL = "https://cafe-api-wmag.onrender.com"
+# BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "https://cafe-api-wmag.onrender.com"
 
 class ApiClient:
     def __init__(self, base_url=BASE_URL):
