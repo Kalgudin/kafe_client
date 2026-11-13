@@ -4,7 +4,8 @@ import requests
 # Адрес локального FastAPI.
 # Для Android-эмулятора используй http://10.0.2.2:8000
 # Для реального телефона нужен IP компьютера в локальной сети.
-BASE_URL = "http://127.0.0.1:8000"
+# BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "https://cafe-api1.onrender.com"
 
 
 class ApiClient:
